@@ -42,11 +42,11 @@
         android:layout_height="wrap_content"
         android:contentDescription="@string/dice_image"
         android:scaleType="centerCrop"
-        android:src="@drawable/dice_1"
         app:layout_constraintBottom_toTopOf="@id/roll_button"
         app:layout_constraintEnd_toStartOf="@id/dice_two_imageview"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/dice_1" />
 
     <ImageView
         android:id="@+id/dice_two_imageview"
@@ -54,7 +54,7 @@
         android:layout_height="wrap_content"
         android:contentDescription="@string/dice_image"
         android:scaleType="centerCrop"
-        android:src="@drawable/dice_2"
+        app:srcCompat="@drawable/dice_1"
         android:visibility="gone"
         app:layout_constraintBottom_toTopOf="@id/roll_button"
         app:layout_constraintEnd_toEndOf="parent"
